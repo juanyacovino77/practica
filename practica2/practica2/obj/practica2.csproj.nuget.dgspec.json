@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\practica2.csproj": {}
+    "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\practica2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\practica2.csproj": {
+    "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\practica2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\practica2.csproj",
+        "projectUniqueName": "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\practica2.csproj",
         "projectName": "practica2",
-        "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\practica2.csproj",
+        "projectPath": "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\practica2.csproj",
         "packagesPath": "C:\\Users\\Juan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\obj\\",
+        "outputPath": "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan\\AppData\\Roaming\\NuGet\\NuGet.Config",

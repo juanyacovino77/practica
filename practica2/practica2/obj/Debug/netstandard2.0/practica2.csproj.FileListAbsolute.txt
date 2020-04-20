@@ -1,0 +1,9 @@
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\bin\Debug\netstandard2.0\practica2.deps.json
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\bin\Debug\netstandard2.0\practica2.dll
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\bin\Debug\netstandard2.0\practica2.pdb
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.csprojAssemblyReference.cache
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.AssemblyInfoInputs.cache
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.AssemblyInfo.cs
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.dll
+C:\Users\Juan\Documents\GitHub\practica\practica2\practica2\obj\Debug\netstandard2.0\practica2.pdb

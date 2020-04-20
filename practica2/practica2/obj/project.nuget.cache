@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yL7bSz/8tF1h3G1E2bl5PXYReeyN8WJdrbPSxSWoQ1VwQpkFtdt+CHlzto3tF3NLJlJFt5bedNrHdBlU0ddrxg==",
+  "dgSpecHash": "+uFWrFheEQ+BdK+2u4EbL7ZRANIAX+8JI9B2sJyhcTkkZiAaVAd5/GRPc9UKOL1AAbv67+ntGR0A5MVnU55xRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juan\\Documents\\GitHub\\practica2\\practica2\\practica2.csproj",
+  "projectFilePath": "C:\\Users\\Juan\\Documents\\GitHub\\practica\\practica2\\practica2\\practica2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Juan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
