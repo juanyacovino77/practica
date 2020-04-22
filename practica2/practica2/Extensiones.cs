@@ -6,19 +6,19 @@ namespace practica2
     public static class Extensiones
     {
 
-        public static int CountWords(this String chain, string text)
+        public static int CountWords(this String text)
         {
             var count = text.Split().Length;
             return count;
         }
 
-        public static int CountWords(this String chain, string text, char separator)
+        public static int CountWords(this String text, char separator)
         {
             var count = text.Split(separator).Length;
             return count;
         }
 
-        public static double GetSecondsBetween(this DateTime time, DateTime fecha1, DateTime fecha2)
+        public static double GetSecondsBetween(this DateTime fecha1, DateTime fecha2)
         {
             var intervalo  = fecha1 - fecha2;
             var diferencia = intervalo.TotalSeconds;
@@ -27,27 +27,24 @@ namespace practica2
 
         }
 
-        public static double GetAverage(this List<int> listint, List<int> intlist)
+        public static double GetAverage(this List<int> listint)
         {
             var adittion = 0;
-            var amountofnumbers = intlist.Count;
-
-            foreach (var item in intlist)
+            var amountofnumbers =   listint.Count;
+            foreach (var item in listint)
             {
                 adittion = adittion + item;
-
             }
-
             return adittion / amountofnumbers;
 
         }
 
-        public static int MultiplyOddByPair(this List<int> listint, List<int> intlist)
+        public static int MultiplyOddByPair(this List<int> listint)
         {
             int restaimpares = 0;
             int sumapares = 0;
 
-            foreach (var number in intlist)
+            foreach (var number in listint)
             {
                 if (number/2 == 0)
                 {
@@ -64,12 +61,37 @@ namespace practica2
 
         }
         
-        public static int Substration(this Int32 entero, int entero1, int entero2 )
+        public static int Substration(this Int32 entero1, int entero2)
         {
             return entero1 - entero2;
+
         }
 
-        public static double operator / ()
+        //public static string ConvertToDate(this String texto)
+        //{
+        //    //formato entra: 12 de abril de 2020
+        //    //formato salida: 12/04/2020
+
+        //}
+
+        public static string Reverse(this String text)
+        {
+
+            char[] vectorTexto = text.ToCharArray();
+
+            char[] vectorRever = new char[vectorTexto.Length];
+
+            var i = vectorTexto.Length-1;
+            string cadenanueva = "";
+
+            while (i != -1)
+            {
+                cadenanueva = cadenanueva + vectorTexto[i];
+                i--;
+            }
+
+            return cadenanueva;
+        }
 
 
     }

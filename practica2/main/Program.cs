@@ -7,6 +7,11 @@ namespace main
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("ingrese texto");
+            var text = Console.ReadLine();
+            string textoinvertido = text.Reverse();
+            Console.WriteLine(textoinvertido);
+
 
         }
     }
