@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace practica2
 {
@@ -78,9 +79,6 @@ namespace practica2
         {
 
             char[] vectorTexto = text.ToCharArray();
-
-            char[] vectorRever = new char[vectorTexto.Length];
-
             var i = vectorTexto.Length-1;
             string cadenanueva = "";
 
@@ -89,8 +87,27 @@ namespace practica2
                 cadenanueva = cadenanueva + vectorTexto[i];
                 i--;
             }
-
             return cadenanueva;
+        }
+
+        public static string SplitBy(this String[] text, char separador)
+        {
+            string cadena = "";
+
+            foreach (var celda in text)
+            {
+                cadena = cadena + separador.ToString() + celda;
+            }
+
+            return cadena;
+        }
+
+        public static bool IsItMail()
+        {
+            
+
+
+
         }
 
 
