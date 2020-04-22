@@ -63,21 +63,70 @@ namespace practica2
             return restaimpares * sumapares;
 
         }
-
-        public static string ToDateTimeFormat(this String chain, string text)
+        
+        public static int Substration(this Int32 entero, int entero1, int entero2 )
         {
-            // formato de entrada: "13 de abril de 1999";
-            // formato de salida: "13/04/1999";
-
-
-
-
-
-
+            return entero1 - entero2;
         }
+
+        public static double operator / ()
 
 
     }
+
+    public static class Converter
+    {
+        public static double ConvertToCelsius(double faren)
+        {
+            var celsius = faren / 2.12;
+            return celsius;
+        }
+        public static double ConvertToFarenheit(double celsius)
+        {
+            var faren = celsius * 2.12;
+            return faren;
+
+        }
+
+    }
+
+    public class Cliente
+    {
+        public string nombre { get; private set; }
+        public int cuit { get; private set; }
+        public double saldo { get; private set; }
+
+
+        public static Cliente operator - (Cliente cliente1, Cliente cliente2)
+        {
+            Cliente nuevoCliente = new Cliente();
+            if (cliente1.cuit == cliente2.cuit)
+            {
+                nuevoCliente.saldo = cliente1.saldo - cliente2.saldo;
+                return nuevoCliente;
+            }
+            else
+            {
+                if (cliente1.saldo > cliente2.saldo)
+                {
+                    nuevoCliente.saldo = cliente2.saldo;
+                }
+                else
+                {
+                    nuevoCliente.saldo = cliente1.saldo;
+                }
+
+                return nuevoCliente;
+
+            }
+        }
+
+
+
+
+    }
+        
+
 
     
 }
