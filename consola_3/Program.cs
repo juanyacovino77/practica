@@ -7,11 +7,30 @@ using Lógica_3;
 
 namespace consola_3
 {
-    class Program
+
+    public static class Program
     {
         static void Main(string[] args)
         {
+            var deposito = Depósito.Instance;
+            deposito.EventoModificacion += CapturarModificacion;
 
+            //pedir datos de algun producto
+
+
+
+
+
+        }
+
+        private static void CapturarModificacion(Producto producto)
+        {
+            Console.WriteLine(producto.ObtenerDescripcion());
+        }
+
+        public static bool ValidarRAM(this Computadora compu, string ramsss)
+        {
+            return true;
         }
 
     }

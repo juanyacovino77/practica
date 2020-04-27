@@ -19,6 +19,10 @@ namespace Lógica_3
         }
         public int? Pulgadas { get; set; }
 
+        public override string ObtenerDescripcion()
+        {
+            return base.ObtenerDescripcion() + this.Pulgadas;
+        }
 
     }
 }

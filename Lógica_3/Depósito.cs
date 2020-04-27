@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lógica_3
 {
-    public class Depósito
+    public delegate void Modificacion(Producto producto);
+    public sealed class Depósito
     {
+        public event Modificacion EventoModificacion;
         public static List<Producto> Productos { get; set; }
         private static Depósito instance = null;
         public static Depósito Instance
@@ -26,10 +28,12 @@ namespace Lógica_3
         public void AgregarProducto(Monitor monitor)
         {
             Productos.Add(monitor);
+            this.EventoModificacion(monitor);
         }
         public void AgregarProducto(Computadora compu)
         {
             Productos.Add(compu);
+            this.EventoModificacion(compu);
         }
         public void EliminarProducto(string identificador)
         {
@@ -37,21 +41,6 @@ namespace Lógica_3
             if (prod != null)
             {
                 Productos.Remove(prod);
-            }
-        }
-        public void ObtenerDescripcion() 
-        {
-            foreach (var producto in Productos)
-            {
-                if (producto is Monitor)
-                {
-                    Console.WriteLine($"MONITOR: {producto.Identificador}");
-                }
-                else
-                {
-                    Console.WriteLine($"COMPUTADOR: {producto.Identificador}");
-                }
-
             }
         }
 

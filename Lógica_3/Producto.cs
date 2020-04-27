@@ -19,7 +19,10 @@ namespace Lógica_3
             }
         }
 
-
+        public virtual string ObtenerDescripcion()
+        {
+            return this.Modelo + this.Marca;
+        }
 
 
     }
